@@ -1,0 +1,38 @@
+@media screen and (max-width: 1024px) {
+    .container{
+        .header{
+            .menu{
+                display: none;
+            }
+            .login{
+                display: none;
+            }
+            .icon{
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        .header__main {
+         .header__main__content1{
+            h1{
+                font-size: 20px;
+            }
+         }
+         .header__main__content2{
+            img{
+                object-fit: contain;
+            }
+         }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .container
+    .header__main{
+        display: flex;
+        flex-direction: column;
+    }
+}

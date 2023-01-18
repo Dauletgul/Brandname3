@@ -1,0 +1,60 @@
+.footer{
+    background-color: $footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0;
+    h6{
+        color: $bggreen;
+    }
+    h3{
+        padding: 10px 0;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 0;
+    }
+     div{
+        padding: 80px 0;
+        input{
+            width: 668px;
+            height: 35px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+}
+.foot{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: auto;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

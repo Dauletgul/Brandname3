@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,500&display=swap');
+@import "color";
+@import "header";
+@import "main";
+@import "post";
+@import "user";
+@import "footer";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: $bggreen;
+    border: none;
+    color: $white;
+}
+.btn:hover{
+    background-color: $btn;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.btn-primary{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+.container{
+    background-color: $bgColor;
+    .header{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        font-weight: bold;
+        i{
+            display: none;
+        }
+        h1{
+            font-size: 32px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+            li{
+                a:hover{
+                    color: orange;
+                    transition: all .3s ease;
+                    cursor: pointer;
+                }
+                a:focus{
+                  border:1px solid black;
+                  border-radius: 3px;
+                }
+                a:active{
+                    color: black
+                }
+            }
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            h6:hover{
+                color: orange;
+            }
+        }
+        
+        &__main{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h5{
+                color: $bggreen;
+            }
+            h1{
+                font-size: 58px;
+                font-weight: bold;
+                padding: 20px 0 ;
+            }
+            p{
+                width: 300px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
